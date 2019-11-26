@@ -30,7 +30,7 @@ public class user {
     @Column(name = "email")
     private String email;
 
-//    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
-//    private List<User>
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
+    private List<UserRole> roles;
 
 }
