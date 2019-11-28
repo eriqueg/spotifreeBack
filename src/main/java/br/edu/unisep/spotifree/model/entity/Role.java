@@ -1,11 +1,13 @@
 package br.edu.unisep.spotifree.model.entity;
 
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.*;
 
 @Data
 @Entity
+@Builder
 @Table(name="roles")
 public class Role {
 
