@@ -16,9 +16,11 @@ public class UserRole {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idUserRole;
 
+    @ManyToOne
     @Column(name = "id_user")
-    private Integer idUser;
+    private User idUser;
 
+    @OneToOne
     @Column(name = "id_role")
-    private Integer idRole;
+    private Role idRole;
 }
